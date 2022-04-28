@@ -17,7 +17,7 @@
         <div class="row">
             <aside class="d-flex flex-column flex-shrink-0 p-3 bg-light col-2">
 
-                <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
                     <svg class="bi me-2" width="40" height="32">
                         <use xlink:href="#bootstrap"></use>
                     </svg>
@@ -63,27 +63,29 @@
                     <form class="col-6" id="form">
                         <div class="mb-3">
                             <label for="nome" class="form-label">Nome</label>
-                            <input type="text" class="form-control" id="nome" aria-describedby="nome" name="name-input">
+                            <input type="text" class="form-control" id="nome" aria-describedby="nome" name="name-input" >
                         </div>
                         <div class="mb-3">
                             <label for="atracoes" class="form-label">Atrações</label>
-                            <input type="text" class="form-control" id="atracoes" aria-describedby="atracoes" name="attractions-input">
+                            <input type="text" class="form-control" id="atracoes" aria-describedby="atracoes"
+                                name="attractions-input" >
                             <small>insira o nome dos artistas separados por vírgula</small>
                         </div>
                         <div class="mb-3">
                             <label for="descricao" class="form-label">Descrição</label>
-                            <textarea name="description-input" id="descricao" class="form-control" rows="5"></textarea>
+                            <textarea maxlength="250" name="description-input" id="descricao" class="form-control" rows="5"></textarea>
                         </div>
                         <div class="mb-3">
                             <label for="data" class="form-label">Data</label>
-                            <input type="datetime" name="date-input" id="data" class="form-control"
+                            <input type="datetime-local" name="date-input" id="data" class="form-control"
                                 placeholder="00/00/00 00:00">
                         </div>
                         <div class="mb-3">
                             <label for="lotacao" class="form-label">Lotação (número de ingressos disponiveis)</label>
-                            <input type="number" class="form-control" id="lotacao" aria-describedby="lotacao" name="capacity-input">
+                            <input type="number" class="form-control" id="lotacao" aria-describedby="lotacao"
+                                name="capacity-input" >
                         </div>
-                        <button type="submit" class="btn btn-primary">enviar</button>
+                        <button type="submit" class="btn btn-primary" id="form-submit-button" >enviar</button>
                     </form>
                 </div>
             </main>
@@ -92,8 +94,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
-         <script src="./js/cadastro-evento.js"></script>
-    
+    <script src="js/cadastro-evento.js"></script>
 </body>
 
 </html>
