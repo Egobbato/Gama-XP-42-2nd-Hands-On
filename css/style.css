@@ -58,13 +58,40 @@ footer nav ul li {
 
   .col {
     flex: none;
-    width: auto;
+    width: 100%;
+  }
+}
+
+@media (max-width: 890px) {
+  aside .d-flex {
+    margin: auto;
+  }
+
+  .img-responsive {
+    width: 200px;
+  }
+
+  .col-2 {
+    width: 100%;
+  }
+
+  .col-9 {
+    margin: auto;
+  }
+
+  .col-6 {
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
+  .my-5 {
+    text-align: center;
+  }
+
   .d-flex {
     flex-direction: column;
+    text-align: center;
   }
 
   article.evento {
@@ -73,5 +100,17 @@ footer nav ul li {
 
   .col img {
     max-width: 100%;
+  }
+
+  td {
+    display: flex;
+  }
+
+  th {
+    display: none;
+  }
+
+  .firstTdElement {
+    margin-top: 20px;
   }
 }
